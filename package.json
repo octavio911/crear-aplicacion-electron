@@ -1,0 +1,23 @@
+{
+  "name": "crear-aplicacion-electron",
+  "version": "1.0.0",
+  "description": "mi primera aplicacion de escritorio",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "electron  index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/octavio911/crear-aplicacion-electron.git"
+  },
+  "author": "Octavio Sanchez Gomez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/octavio911/crear-aplicacion-electron/issues"
+  },
+  "homepage": "https://github.com/octavio911/crear-aplicacion-electron#readme",
+  "devDependencies": {
+    "electron": "^19.0.6"
+  }
+}
