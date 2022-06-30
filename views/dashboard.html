@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+	<!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">-->
+	
+	<script src="../scripts/jquery3.6.0.min.js"></script>
+	<script src="../scripts/bootstrap5.0.2.bundle.min.js"></script>
+	<script src="../preload.js"></script>
+	<link rel="stylesheet" type="text/css" href="../scripts/bootstrap5.0.2.min.css">
+
+	<title>Hello World!</title>
+</head>
+
+<body>
+	<div>
+	    <h1>HOLA MUNDO</h1>
+	</div>
+	
+
+	<script>
+		let formValues = {};
+		(function () {
+			'use strict'
+
+			// Fetch all the forms we want to apply custom Bootstrap validation styles to
+			var forms = document.querySelectorAll('.needs-validation')
+
+			// Loop over them and prevent submission
+			Array.prototype.slice.call(forms)
+				.forEach(function (form) {
+					form.addEventListener('submit', function (event) {
+						if (!form.checkValidity()) {
+							event.preventDefault()
+							event.stopPropagation()
+				
+						
+						}else{
+						
+							event.preventDefault()
+							
+						}
+
+						form.classList.add('was-validated')
+
+					}, false)
+					//
+				})
+			
+		})()
+
+
+	</script>
+
+</body>
+
+</html>

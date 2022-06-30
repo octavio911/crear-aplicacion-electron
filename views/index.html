@@ -4,16 +4,19 @@
 <head>
 	<meta charset="UTF-8">
 	<!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-
+	<!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">-->
+	
 	<script src="../scripts/jquery3.6.0.min.js"></script>
 	<script src="../scripts/bootstrap5.0.2.bundle.min.js"></script>
+	<script src="../preload.js"></script>
 	<link rel="stylesheet" type="text/css" href="../scripts/bootstrap5.0.2.min.css">
+
 	<title>Hello World!</title>
 </head>
 
 <body>
 	<div>
-
+		<h2 class="text-center">El usuario es: admin y la contraseña es: 123</h2>
 	</div>
 	<br>
 	<br>
@@ -49,13 +52,14 @@
 					<button id="" class="btn btn-outline-primary  col-12 rounded-0">Crear cuenta</button>
 				</div>
 				<div class="col-12 col-md-6">
-					<button id="btnLogin" type="submit" onclick="" class="btn btn-outline-primary col-12 rounded-0">Iniciar sesion</button>
+					<button id="btnLogin" type="submit" onclick="getFormData('formLogin')" class="btn btn-outline-primary col-12 rounded-0">Iniciar sesion</button>
 				</div>
 			</div>
 		</form>
 	</div>
 
 	<script>
+		let formValues = {};
 		(function () {
 			'use strict'
 
@@ -74,7 +78,7 @@
 						}else{
 							console.log("DATOS VALIDADOS Y CONFIRMADOS")
 							event.preventDefault()
-							loginSupervisor();
+							login(formValues);
 						}
 
 						form.classList.add('was-validated')
@@ -85,16 +89,15 @@
 			
 		})()
 
-	
-
 		function getFormData(form) {
 			//console.log(form)
-			let formValues = {};
+			
 			var form1Inputs = document.forms[form].getElementsByTagName("input");
 			for (let i = 0; i < form1Inputs.length; i++) {
 				formValues[form1Inputs[i].name] = form1Inputs[i].value;
 			}
 			console.log(formValues);
+
 		}
 
 	</script>

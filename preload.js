@@ -1,8 +1,9 @@
 const { ipcRenderer } = require('electron')
 
-function loginSupervisor(){
-    console.log("sdaf")
-    alert("sdaf")
+function login(formValues){
+    //console.log("login exitoso")
+    //alert("login exitoso")
+    ipcRenderer.invoke('login', formValues).then((reply) => console.log(reply))
 }
 
-ipcRenderer.invoke('invoke-handle-message', 'ping').then((reply) => console.log(reply))
+
