@@ -8,6 +8,7 @@ let secondaryWindow;
 let mainWindow;
 const icon = path.join(__dirname, 'electron.ico');
 
+//MENU QUE APARECE EN LA BARRA DE NOTIFICACIONES DEL SISTEMA OPERATIVO
 const contextMenu = Menu.buildFromTemplate([
 	{
 		label: 'MENU PERSONALIZADO 1',
@@ -66,6 +67,7 @@ function showNotification(message) {
 	new Notification({ title: 'NOTIFICACION', body: message }).show()
 }
 
+//VENTANA SECUNDARIA CON OTRA DIMENCION
 function sWindow() {
 	secondaryWindow = new BrowserWindow({
 		width: 1300,

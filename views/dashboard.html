@@ -2,57 +2,115 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-	<!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">-->
-	
-	<script src="../scripts/jquery3.6.0.min.js"></script>
-	<script src="../scripts/bootstrap5.0.2.bundle.min.js"></script>
-	<script src="../preload.js"></script>
-	<link rel="stylesheet" type="text/css" href="../scripts/bootstrap5.0.2.min.css">
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">-->
 
-	<title>Hello World!</title>
+    <script src="../scripts/jquery3.6.0.min.js"></script>
+    <script src="../scripts/bootstrap5.0.2.bundle.min.js"></script>
+    <script src="../preload.js"></script>
+    <link rel="stylesheet" type="text/css" href="../scripts/bootstrap5.0.2.min.css">
+
+    <title>Hello World!</title>
 </head>
 
 <body>
-	<div>
-	    <h1>HOLA MUNDO</h1>
-	</div>
-	
+    <div>
+        <h1 class="text-center">MENU</h1>
+    </div>
+    <div class="">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card text-white bg-success mb-3" >
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Success card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card text-white bg-warning mb-3" >
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Success card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card text-white bg-success mb-3" >
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Success card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4  col-xl-3">
+                <div class="card text-white bg-warning mb-3" >
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Success card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4  col-xl-3">
+                <div class="card text-white bg-success mb-3" >
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Success card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4  col-xl-3">
+                <div class="card text-white bg-warning mb-3" >
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Success card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<script>
-		let formValues = {};
-		(function () {
-			'use strict'
+    <script>
+        let formValues = {};
+        (function () {
+            'use strict'
 
-			// Fetch all the forms we want to apply custom Bootstrap validation styles to
-			var forms = document.querySelectorAll('.needs-validation')
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
 
-			// Loop over them and prevent submission
-			Array.prototype.slice.call(forms)
-				.forEach(function (form) {
-					form.addEventListener('submit', function (event) {
-						if (!form.checkValidity()) {
-							event.preventDefault()
-							event.stopPropagation()
-				
-						
-						}else{
-						
-							event.preventDefault()
-							
-						}
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
 
-						form.classList.add('was-validated')
+                        } else {
+                            event.preventDefault()
+                        }
 
-					}, false)
-					//
-				})
-			
-		})()
+                        form.classList.add('was-validated')
 
+                    }, false)
+                    //
+                })
+        })()
 
-	</script>
+    </script>
 
 </body>
 
