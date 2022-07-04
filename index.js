@@ -78,6 +78,7 @@ function sWindow() {
 			contextIsolation: false
 		}
 	})
+	secondaryWindow.webContents.openDevTools()
 	secondaryWindow.loadFile('views/dashboard.html')
 	return secondaryWindow;
 }

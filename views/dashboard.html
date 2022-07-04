@@ -10,78 +10,264 @@
     <script src="../scripts/bootstrap5.0.2.bundle.min.js"></script>
     <script src="../preload.js"></script>
     <link rel="stylesheet" type="text/css" href="../scripts/bootstrap5.0.2.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
-    <title>Hello World!</title>
+    <title>Segunda ventana</title>
 </head>
 
 <body>
-    <div>
-        <h1 class="text-center">MENU</h1>
-    </div>
-    <div class="">
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card text-white bg-success mb-3" >
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Success card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+
+    <div class="mb-3 ms-2 me-2">
+        <div class="accordion  text-center" id="accordionFlushExample">
+
+            <div class="text-center">
+
+                <h2 class="accordion-header text-center">
+                    <button class=" col-12 border shadow text-center " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-controls="flush-collapseOne">
+                        <p class="btn-link">Menu</p>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body ">
+
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                    aria-selected="true"> <i class="bi bi-house-fill"
+                                        style="font-size:3rem ;"></i></button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                                    type="button" role="tab" aria-controls="profile" aria-selected="false"><i
+                                        class="bi bi-building  " style="font-size:3rem ;"></i></button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="tablero-tab" data-bs-toggle="tab" data-bs-target="#tablero"
+                                    type="button" role="tab" aria-controls="tablero" aria-selected="false"><i
+                                        class="bi bi-easel2  " style="font-size:3rem ;"></i></button>
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card text-white bg-warning mb-3" >
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Success card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+
+        </div>
+
+        <div>
+
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <br>
+                    <div id="qwe" class="">
+                        <div class="row ms-1 me-1">
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card text-white bg-success mb-3 ">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Success card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of
+                                            the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card text-white bg-warning mb-3">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Success card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of
+                                            the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card text-white bg-success mb-3">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Success card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of
+                                            the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4  col-xl-3">
+                                <div class="card text-white bg-warning mb-3">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Success card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of
+                                            the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4  col-xl-3">
+                                <div class="card text-white bg-success mb-3">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Success card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of
+                                            the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4  col-xl-3">
+                                <div class="card text-white bg-warning mb-3">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Success card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of
+                                            the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+
+
+
                 </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card text-white bg-success mb-3" >
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Success card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                <div class="tab-pane fade" id="tablero" role="tabpanel" aria-labelledby="tablero-tab">
+                    <br>
+
+                    <div>
+                        <h3 class="text-center mb-3">Tablero kanban</h3>
+                        <hr class="container" style="width: 75%;">
                     </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4  col-xl-3">
-                <div class="card text-white bg-warning mb-3" >
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Success card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                    <div class="row ms-1 me-1">
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card mb-3 rounded-0">
+                                <div class="card-header text-center d-flex justify-content-between">
+                                    <div class="mt-1">
+                                        <b>Cosas por hacer</b>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-plus-square-dotted" style="font-size: 1.5rem ;"></i>
+                                    </div>
+                                </div>
+                                <div class=" card-body" style="min-height:80vh ;">
+                                    <div class=" border mb-2  " style="padding: 2%; background-color: #f8f9fa;">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="mb-1">
+                                                <b><i class="bi bi-bookmark-check-fill text-primary"></i> TITULO DE
+                                                    LANOTA</b>
+                                            </div>
+                                            <div>
+                                                <i class="bi bi-gear"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>DESCRIPCION O LO QUE SEA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card mb-3 rounded-0">
+                                <div class="card-header text-center d-flex justify-content-between">
+                                    <div class="mt-1">
+                                        <b>Cosas por hacer</b>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-plus-square-dotted" style="font-size: 1.5rem ;"></i>
+                                    </div>
+                                </div>
+                                <div class=" card-body" style="min-height:80vh ;">
+                                    <div class=" border mb-2  " style="padding: 2%; background-color: #f8f9fa;">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="mb-1">
+                                                <b><i class="bi bi-bookmark-check-fill text-primary"></i> TITULO DE
+                                                    LANOTA</b>
+                                            </div>
+                                            <div>
+                                                <i class="bi bi-gear"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>DESCRIPCION O LO QUE SEA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card mb-3 rounded-0">
+                                <div class="card-header text-center d-flex justify-content-between">
+                                    <div class="mt-1">
+                                        <b>Cosas por hacer</b>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-plus-square-dotted" style="font-size: 1.5rem ;"></i>
+                                    </div>
+                                </div>
+                                <div class=" card-body" style="min-height:80vh ;">
+                                    <div class=" border mb-2  " style="padding: 2%; background-color: #f8f9fa;">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="mb-1">
+                                                <b><i class="bi bi-bookmark-check-fill text-primary"></i> TITULO DE
+                                                    LANOTA</b>
+                                            </div>
+                                            <div>
+                                                <i class="bi bi-gear"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>DESCRIPCION O LO QUE SEA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card mb-3 rounded-0">
+                                <div class="card-header text-center d-flex justify-content-between">
+                                    <div class="mt-1">
+                                        <b>Cosas por hacer</b>
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-plus-square-dotted" style="font-size: 1.5rem ;"></i>
+                                    </div>
+                                </div>
+                                <div class=" card-body" style="min-height:80vh ;">
+                                    <div class=" border mb-2  " style="padding: 2%; background-color: #f8f9fa;">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="mb-1">
+                                                <b><i class="bi bi-bookmark-check-fill text-primary"></i> TITULO DE
+                                                    LANOTA</b>
+                                            </div>
+                                            <div>
+                                                <i class="bi bi-gear"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>DESCRIPCION O LO QUE SEA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4  col-xl-3">
-                <div class="card text-white bg-success mb-3" >
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Success card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4  col-xl-3">
-                <div class="card text-white bg-warning mb-3" >
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Success card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
+
                 </div>
             </div>
         </div>
+
+
+
     </div>
+
 
     <script>
         let formValues = {};
@@ -109,6 +295,9 @@
                     //
                 })
         })()
+
+
+
 
     </script>
 

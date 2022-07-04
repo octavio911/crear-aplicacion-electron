@@ -19,5 +19,8 @@
   "homepage": "https://github.com/octavio911/crear-aplicacion-electron#readme",
   "devDependencies": {
     "electron": "^19.0.6"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.8.3"
   }
 }
